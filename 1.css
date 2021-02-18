@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #323D47;
+}
+
+.hero__images {
+  position: relative;
+  padding-top: 125%;
+}
+
+.hero__slides {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.hero__figure {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 80%;
+}
+
+.hero__scrim {
+  position: absolute;
+  z-index: 10;
+  background: linear-gradient(rgba(0,0,0,0), #323D47 50%);
+  bottom: 0;
+  left: 0;
+  height: 75%;
+  width: 100%;
+}
+
+.hero__copy {
+  padding: 2rem 1rem;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero__blurb {
+  margin-bottom: 1.5rem;
+}
+
+.hero__figure {
+  opacity: 0;
+  transition: opacity 375ms ease;
+}
+
+.hero__copy {
+  transition: all 375ms ease-out;
+}
+
+.hero--0 .hero__copy:nth-child(1) { transform: translateY(-100%); opacitY: 1; }
+.hero--0 .hero__figure:nth-child(1) { opacity: 1; transform: translateX(-100%) }
+
+.hero--1 .hero__copy:nth-child(2) { transform: translateY(-100%); opacity: 1; }
+.hero--1 .hero__figure:nth-child(2) { opacity: 1; transform: translateX(-100%) }
+
+.hero--2 .hero__copy:nth-child(3) { transform: translateY(-100%); opacity: 1; }
+.hero--2 .hero__figure:nth-child(3) { opacity: 1; transform: translateX(-100%) }
+
+.hero--0 .hero__dots :nth-child(1) { opacity: 1 }
+.hero--1 .hero__dots :nth-child(2) { opacity: 1 }
+.hero--2 .hero__dots :nth-child(3) { opacity: 1 }
+
+@media(min-width: 768px) {
+
+  .wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+  .hero {
+    flex: 1;
+  }
+
+  .hero__scrim {
+    height: 55%;
+  }
+
+  .hero__images {
+    padding-top: 0;
+    height: 100%;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
+
+  .hero__copy {
+    padding: 2rem;
+  }
+
+  .hero__dots {
+    right: 2rem;
+  }
+
+}
+
+@media(min-width: 1024px) {
+
+  .hero__blurb {
+    font-size: 20px;
+  }
+
+}
