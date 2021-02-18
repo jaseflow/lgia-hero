@@ -76,10 +76,6 @@
 .hero--2 .hero__copy:nth-child(3) { transform: translateY(-100%); opacity: 1; }
 .hero--2 .hero__figure:nth-child(3) { opacity: 1; transform: translateX(-100%) }
 
-.hero--0 .hero__dots :nth-child(1) { opacity: 1 }
-.hero--1 .hero__dots :nth-child(2) { opacity: 1 }
-.hero--2 .hero__dots :nth-child(3) { opacity: 1 }
-
 @media(min-width: 768px) {
 
   .wrapper {

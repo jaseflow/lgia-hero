@@ -36,6 +36,7 @@ img {
 
 .btn--hero {
   font-size: 1.125rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .container {
@@ -118,7 +119,7 @@ img {
   align-items: center;
   gap: 0.5rem;
   position: absolute;
-  bottom: 0;
+  bottom: 4rem;
   right: 0;
   z-index: 50;
 }
@@ -133,9 +134,18 @@ img {
   transition: all 375ms ease;
 }
 
-.hero__dots i:hover {
+.hero__dots i:hover,
+.hero--0 .hero__dots :nth-child(1),
+.hero--1 .hero__dots :nth-child(2),
+.hero--2 .hero__dots :nth-child(3) {
   background: #fff;
   box-shadow: none;
+}
+
+@media(min-width: 768px) {
+  .hero__dots {
+    display: flex;
+  }
 }
 
 @media(max-width: 1023px) {

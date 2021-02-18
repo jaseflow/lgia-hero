@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   })
 
   hero.setAttribute('class',`hero hero--${activeIndex}`)
-  heroSlides.setAttribute('class', `hero__slides hero__slides--${activeIndex}`)
 
   setInterval(() => {
     if (!manual && activeIndex >= (slides.length - 1)) {
@@ -26,7 +25,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
       activeIndex ++
     }
     hero.setAttribute('class',`hero hero--${activeIndex}`)
-    heroSlides.setAttribute('class',`hero__slides hero__slides--${activeIndex}`)
   }, 5000)
 
 });
