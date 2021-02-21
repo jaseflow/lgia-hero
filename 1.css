@@ -85,6 +85,10 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   }
 
+  .actions__link {
+    justify-content: flex-start;
+  }
+
   .hero {
     flex: 1;
   }
@@ -110,12 +114,8 @@
     right: 2rem;
   }
 
-}
-
-@media(min-width: 1024px) {
-
   .hero__blurb {
-    font-size: 20px;
+    padding-right: 140px;
   }
 
 }

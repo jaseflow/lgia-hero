@@ -51,6 +51,7 @@ img {
   z-index: 50;
 }
 
+.actions,
 .actions__list {
   list-style: none;
 }
@@ -165,6 +166,10 @@ img {
 
   .header {
     padding: 2rem 0;
+  }
+
+  .header img {
+    width: 120px;
   }
 
   .actions__list {

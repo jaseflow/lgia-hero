@@ -126,7 +126,7 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #00945A 0%, #7FC241 144%);
+    background: linear-gradient(90deg, #7FC241 0%, #00945A 30%);
     overflow: hidden;
     height: 60vh;
     min-height: 500px;
@@ -168,16 +168,15 @@ body {
   }
 
   .hero__figures:after {
-    top: -120px;
+    top: -0;
     left: -130px;
     width: 250px;
-    height: 150%;
+    height: 100%;
     position: absolute;
-    background: linear-gradient(45deg, #2da651, #04965A);
+    background: #00945A;
     content: '';
     display: block;
-    transform: rotate(20deg);
-    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.05)
+    border-radius: 0 120px 0 0;
   }
 
   .hero--0 .hero__content:nth-child(1) {
