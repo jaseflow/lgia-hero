@@ -5,18 +5,92 @@
   <title>Hero</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="2.css">
 </head>
 <body>
-  <div class="wrapper">
-    <ul>
-      <li>
-        <a href="1.html">One</a>
-      </li>
-      <li>
-        <a href="2.html">Two</a>
-      </li>
-    </ul>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__wrap">
+        <img src="logo--dark.svg" alt="">
+        <nav class="header__nav">
+          <a href="#">Compare</a>
+          <a href="#">Superannuation</a>
+          <a href="#">Retirement</a>
+          <a href="#">Investments</a>
+          <a href="#">Resources</a>
+          <a href="#">Member Online</a>
+        </nav>
+      </div>
+      <nav class="header__actions">
+        <a class="btn" href="#">Join</a>
+        <a class="btn btn--secondary" href="#">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero" id="hero">
+    <div class="container">
+      <div class="hero__figures">
+        <div class="hero__img" style="background-image: url(1.jpg)"></div>
+        <div class="hero__img" style="background-image: url(2.jpg)"></div>
+        <div class="hero__img" style="background-image: url(3.jpg)"></div>
+      </div>
+      <div class="hero__slides" id="hero-slides">
+        <div class="hero__content">
+          <h1 class="hero__title">Your fund for life</h1>
+          <p class="hero__blurb">We look after over $13 billion in retirement savings for around 73,000
+          members. There has never been a more exciting time to be an LGIAsuper member.</p>
+          <a href="#" class="btn btn--hero hero__action">Join today</a>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Retiring right</h1>
+          <p class="hero__blurb">Getting professional advice can be a great way
+          to get your retirement plans on track - and it doesn't need to cost a
+          fortune.</p>
+          <a href="#" class="btn btn--hero hero__action">Join today</a>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Reliable growth</h1>
+          <p class="hero__blurb">At LGIAsuper we're committed to growing your
+          superannuation savings with great investment returns.</p>
+          <a href="#" class="btn btn--hero hero__action">Join today</a>
+        </div>
+        <div class="hero__dots">
+          <i class="hero-dot"></i>
+          <i class="hero-dot"></i>
+          <i class="hero-dot"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="container">
+      <ul class="actions__list">
+        <li class="actions__item">
+          <a href="#" class="actions__link">
+            <img src="icon-large-mol-active.png" alt="">
+            Register for Member Online
+          </a>
+        </li>
+        <li class="actions__item">
+          <a href="#" class="actions__link">
+            <img src="icon-large-contribute.png" alt="">
+            View my super balance
+          </a>
+        </li>
+        <li class="actions__item">
+          <a href="#" class="actions__link">
+            <img src="icon-large-insurance.png" alt="">
+            View earning rates
+          </a>
+        </li>
+        <li class="actions__item">
+          <a href="#" class="actions__link">
+            <img src="icon-large-calculator $.png" alt="">
+            Check my transactions
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
   <script src="hero.js"></script>
 </body>
